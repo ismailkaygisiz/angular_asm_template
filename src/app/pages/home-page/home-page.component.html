@@ -1,0 +1,295 @@
+<div style="background-color: rgb(0, 204, 255); color: white">
+  <ul class="nav justify-content-center">
+    <li class="nav-item center">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            aria-current="page"
+            href="/"
+            style="color: white !important"
+            >{{ navbarBrand }}</a
+          >
+          <button
+            style="color: white !important"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              style="color: white !important"
+              class="navbar-toggler-icon"
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#announcement"
+                  style="color: white !important"
+                  >Duyurular</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link" style="color: white !important"
+                  >Linkler</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  style="color: white !important"
+                  >İletişim</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </li>
+  </ul>
+</div>
+<div class="contents">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="margin-top: 20vh">
+        <h1 style="font-size: 50px">{{ asmName }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2 style="margin-top: 15vh; margin-bottom: 5vh">HİZMETLERİMİZ</h2>
+      </div>
+      <div class="row" style="color: white; opacity: 0.9">
+        <div class="col-md-6" style="text-align: start">
+          <h6>&#10004; Poliklink Hizmetleri</h6>
+          <h6>&#10004; Gebe İzleme</h6>
+          <h6>&#10004; Bebek İzleme</h6>
+          <h6>&#10004; Çocuk İzleme</h6>
+        </div>
+        <div class="col-md-6" style="text-align: start">
+          <h6>&#10004; Aile Planlaması</h6>
+          <h6>&#10004; Aşı Programları</h6>
+          <h6>&#10004; Kanser Tarama</h6>
+          <h6>&#10004; Eğitim Hizmetleri</h6>
+        </div>
+      </div>
+      <div style="margin-bottom: 10vh"></div>
+    </div>
+  </div>
+</div>
+<br />
+
+<div class="container">
+  <h3 style="text-align: center; margin-top: 3vh">Medya</h3>
+  <div class="video-container">
+    <iframe [src]="youtubeLink" frameborder="0"> </iframe>
+  </div>
+</div>
+<hr />
+<div id="announcement">
+  <div class="container">
+    <div class="row" style="text-align: center; margin-top: 2vh">
+      <h3>Duyurular / Makeleler</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div style="text-align: center">
+        <div class="row">
+          <div class="col" style="margin-top: 5vh; margin-bottom: 5vh">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            <h5>Duyuru</h5>
+            <p>{{ announcement1 }}</p>
+          </div>
+          <div class="col" style="margin-top: 5vh; margin-bottom: 5vh">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            <h5>Duyuru</h5>
+            <p>{{ announcement2 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<div id="link">
+  <div class="container">
+    <h3 style="text-align: center; margin-bottom: 3vh">Linkler</h3>
+    <div class="row responsive-link">
+      <div class="col-md-2"></div>
+      <div class="col">
+        <p>
+          <i class="fa fa-chain-broken" aria-hidden="true"></i> &nbsp;
+          <a href="#">Aşı Takvimi</a>
+        </p>
+        <p>
+          <i class="fa fa-chain-broken" aria-hidden="true"></i> &nbsp;
+          <a href="{{ cityHealthLink }}">İl Sağlık Müdürlüğü</a>
+        </p>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col">
+        <p>
+          <i class="fa fa-chain-broken" aria-hidden="true"></i> &nbsp;
+          <a href="#">Büyüme-Gelişme Takibi </a>
+        </p>
+        <p>
+          <i class="fa fa-chain-broken" aria-hidden="true"></i> &nbsp;
+          <a href="#">Sağlık Bakanlığı</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+
+<div
+  style="
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+  "
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="http://saglik.gov.tr" target="_blank"
+          ><img src="assets/sblogo.png" width="160vh" height="auto"
+        /></a>
+      </div>
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="https://sagligim.gov.tr/" target="_blank"
+          ><img src="assets/sagligim.png" width="160vh" height="auto"
+        /></a>
+      </div>
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="https://asi.saglik.gov.tr/" target="_blank"
+          ><img src="assets/asilogo.png" width="160vh" height="auto"
+        /></a>
+      </div>
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="https://www.mhrs.gov.tr/Vatandas/" target="_blank"
+          ><img src="assets/mhrsLogo.jpg" width="160vh" height="auto"
+        /></a>
+      </div>
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="http://alo171.saglik.gov.tr/" target="_blank"
+          ><img src="assets/sigaralogo.png" width="160vh" height="auto"
+        /></a>
+      </div>
+      <div class="col-sm-4 col-md-2 logo">
+        <a href="https://enabiz.gov.tr/" target="_blank"
+          ><img src="assets/eNabiz.png" width="160vh" height="auto"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<div style="margin-top: 10vh">
+  <div class="container">
+    <div class="row">
+      <div class="map-responsive">
+        <iframe
+          [src]="googleMapsLink"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <br />
+    <hr style="margin-top: 10vh" />
+
+    <div class="row footer" style="margin-top: 3vh" id="contact">
+      <div class="col-md-4" style="margin-bottom: 5vh">
+        <div class="row">
+          <h5>{{ contactAsmName }}</h5>
+          <h6>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            {{ contactAsmNumber }}
+          </h6>
+        </div>
+        <div class="row">
+          <h5>{{ contactDistrictHealthName }}</h5>
+          <h6>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            {{ contactDistrictHealthNumber }}
+          </h6>
+        </div>
+        <div class="row">
+          <h5>{{ contactCityHealthName }}</h5>
+          <h6>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            {{ contactCityHealthNumber }}
+          </h6>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="margin-bottom: 5vh">
+        <h5>SAATLERİMİZ</h5>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Pazartesi: 08:00-12:00 || 13:00-17:00
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Pazartesi: 08:00-12:00 || 13:00-17:00
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Çarşamba: 08:00-12:00 || 13:00-17:00
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Perşembe: 08:00-12:00 || 13:00-17:00
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Cuma: 08:00-12:00 || 13:00-17:00
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Cumartesi: Tatil
+          </h6>
+        </div>
+        <div class="row">
+          <h6>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Pazar: Tatil
+          </h6>
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-bottom: 5vh">
+        <h5>ADRES</h5>
+        <h6>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          {{ address }}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
